@@ -2,15 +2,17 @@
 	"segments": {
 		"left": [
 			{
-				"function": "powerline.segments.shell.mode"
+				"function": "powerline.segments.common.time.date",
+			        "priority": 1,
+			        "name": "time",
+			        "args": {
+				  "format": "%a %b %d %H:%M:%S",
+				  "istime": true
+				}
 			},
 			{
 				"function": "powerline.segments.common.net.hostname",
 				"priority": 10
-			},
-			{
-				"function": "powerline.segments.common.env.user",
-				"priority": 30
 			},
 			{
 				"function": "powerline.segments.common.env.virtualenv",
@@ -22,7 +24,11 @@
 			},
 			{
 				"function": "powerline.segments.shell.jobnum",
-				"priority": 20
+				"priority": 7
+			},
+			{
+				"function": "powerline.segments.shell.last_status",
+				"priority": 5
 			}
 		],
 		"right": [

@@ -6,8 +6,8 @@
 				"priority": 10
 			},
 			{
-				"function": "powerline.segments.common.env.user",
-				"priority": 30
+				"function": "powerline.segments.common.time.date",
+				"priority": 100
 			},
 			{
 				"function": "powerline.segments.common.env.virtualenv",
