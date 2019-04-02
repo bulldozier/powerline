@@ -2,16 +2,12 @@
 	"segments": {
 		"left": [
 			{
-				"function": "powerline.segments.common.net.hostname",
-				"priority": 10
-			},
-			{
 				"function": "powerline.segments.common.time.date",
 				"priority": 100
 			},
 			{
-				"function": "powerline.segments.common.env.virtualenv",
-				"priority": 50
+				"function": "powerline.segments.common.net.hostname",
+				"priority": 10
 			},
 			{
 				"function": "powerline.segments.common.vcs.branch",
@@ -26,7 +22,7 @@
 				"priority": 20
 			},
 			{
-				"function": "powerline.segments.shell.last_pipe_status",
+				"function": "powerline.segments.shell.last_status",
 				"priority": 10
 			}
 		]
